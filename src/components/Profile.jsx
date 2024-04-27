@@ -1,7 +1,6 @@
 export default function Profile({
   user: { avatar, username, tag, location, stats },
 }) {
-
   return ( 
   <div>
     <div>

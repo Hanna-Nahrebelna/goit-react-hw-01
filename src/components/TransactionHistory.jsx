@@ -1,15 +1,25 @@
-import TransactionHistoryItems from "./TransactionHistoryItems";
+export default function TransactionHistory({
+  transactions
+}) {
+  return (    
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Amount</th>
+          <th>currency</th>            
+        </tr>
+      </thead>
 
-export default function TransactionHistory({ transactions }) {
-  return (
-    <div>      
       <tbody>
-        {transactions.map((transaction) => (
-          <tr key={transaction.id}>
-            <TransactionHistoryItems transaction={transaction} />
-          </tr>        
-        ))}   
-      </tbody>
-    </div>
+      {transactions.map(({ id, type, amount, currency }) => 
+        <tr key={id}>
+          <td>{type}</td>          
+          <td>{amount}</td>         
+          <td>{currency}</td>
+        </tr>        
+        )}                   
+        </tbody>
+      </table>
   )
 }

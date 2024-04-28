@@ -7,22 +7,24 @@ import friends from "../../friends.json"
 import TransactionHistory from "../TransactionHistory/TransactionHistory";
 import transactions from "../../transactions.json";
 
+import css from "./App.module.css"
+
 
 
 export default function App() {
   return (
-  <>
-    <ul>
+    <div className={css.container}>
+    <ul className={css.list}>
         {userData.map((user) => (
-          <li key={user.tag}>
+          <li className={css.listItem} key={user.tag}>
             <Profile user={user} />
           </li>
         ))}
-      </ul>
+    </ul>
 
       <FriendList friends={friends} />
       <TransactionHistory transactions={transactions} />
-  </>
+  </div>
   );
 }
 

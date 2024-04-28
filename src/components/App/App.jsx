@@ -1,11 +1,11 @@
-import Profile from "./Profile";
-import userData from "../userData.json";
+import Profile from "../Profile/Profile";
+import userData from "../../userData.json";
 
-import FriendList from "./FriendList";
-import friends from "../friends.json"
+import FriendList from "../Friends/FriendList";
+import friends from "../../friends.json"
 
-import TransactionHistory from "./TransactionHistory";
-import transactions from "../transactions.json";
+import TransactionHistory from "../TransactionHistory/TransactionHistory";
+import transactions from "../../transactions.json";
 
 
 

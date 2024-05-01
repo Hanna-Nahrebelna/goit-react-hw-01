@@ -3,7 +3,7 @@
   border: 2px;  
 }
 
-.img {
+.imgAvatar {
   width: 180px;
   height: 180px;
   background-color: black;
@@ -43,20 +43,35 @@
 .listStatsColumn {
   margin-top: 31px;
   width: 100%;
-  height: 123px;
-  font-size: 20px; 
+  height: 123px;  
   border: 2px solid #7f7f7f;
   background-color: #dfdddd;
 }
 
-.listStatsSpan {
+.listStatsSpanFollowers,
+.listStatsSpanViews,
+.listStatsSpanLikes
+ {
   display: block;
-  font-size: 25px;
-   
+  font-size: 27px;
+  padding-top: 25px; 
+}
+
+.listStatsSpanLikes {
+  padding-left: 40px;
+}
+
+.listStatsSpanViews {
+  padding-left: 36px;
+}
+
+.listStatsSpanFollowers {
+  padding-left: 12px;
 }
 
 .numberStatsSpan {
   display: block;
-  font-size: 25px;
+  font-size: 27px;
+  padding-left: 42px;
 }
 

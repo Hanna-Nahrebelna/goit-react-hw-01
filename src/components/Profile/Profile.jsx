@@ -6,7 +6,7 @@ export default function Profile({
   return ( 
   <div>
     <div className={css.container}>
-        <img className={css.img} src={avatar} alt="User avatar" />
+        <img className={css.imgAvatar} src={avatar} alt="User avatar" />
         <p className={css.pName}><b>{username}</b></p>
         <p className={css.pTag}>@{tag}</p>
       <p className={css.pLocation}>{location}</p>
@@ -14,15 +14,15 @@ export default function Profile({
 
   <ul className={css.listStats}>
     <li className={css.listStatsColumn}>
-      <span className={css.listStatsSpan}>Followers</span>
+      <span className={css.listStatsSpanFollowers}>Followers</span>
       <span className={css.numberStatsSpan}><b>{stats.followers}</b></span>
     </li>
     <li className={css.listStatsColumn}>
-      <span className={css.listStatsSpan}>Views</span>
+      <span className={css.listStatsSpanViews}>Views</span>
       <span className={css.numberStatsSpan}><b>{stats.views}</b></span>
     </li>
     <li className={css.listStatsColumn}>
-      <span className={css.listStatsSpan}>Likes</span>
+      <span className={css.listStatsSpanLikes}>Likes</span>
       <span className={css.numberStatsSpan}><b>{stats.likes}</b></span>
     </li>
   </ul>

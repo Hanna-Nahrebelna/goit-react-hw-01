@@ -1,0 +1,43 @@
+table {  
+  border: 2px solid #000000;
+  width: 700px;
+  table-layout: fixed;
+  border-collapse: collapse;
+  margin-top: 50px;
+}
+
+tr, 
+th,
+td  {
+  border: 2px solid #000000;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.tableTitle {
+  background-color: #484848;
+  color: #ffffff;
+}
+
+td {
+  border: 2px solid #000000;  
+}
+
+.tableType {
+  text-align: left;
+  padding-left: 70px;
+}
+
+.tableAmout {
+  text-align: left;
+  padding-left: 90px;
+}
+
+.tableCurrency {
+  text-align: center;
+}
+
+.tableBody:nth-child(2n) {
+  background-color: #dadada;
+}
